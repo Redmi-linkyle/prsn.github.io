@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRS Network || </title>
+    <title>PRS Network || 关于Minecraft服务器</title>
     <meta name="author" content="Redmi_linkyle">
     <meta name="description" content="官方交流群:319659887 ">
     <meta name="keywords" content=" ">
@@ -165,92 +165,69 @@
                 </div>
 
                 <div id="main">
-                    
-<div id="archives">
-    
-    <a-timeline>
-        <a-timeline-item timestamp="2021/9/26" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2021/9/26</div>
-                <a href="/2021/09/26/关于Minecraft服务器/">
-                    <h3>关于Minecraft服务器</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/Minecraft服务器">
-                            <span class="icon"><a-icon type="book" theme="filled" /></span>
-                            Minecraft服务器
-                        </a>
-                    </span>
-                    
+                     
+<link rel="stylesheet" href="/css/post-body.css">
+<div class="article">
+    <div>
+        <h1>关于Minecraft服务器 </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2021/9/26
+        </span>
 
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <a-icon type="tags" />
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/Minecraft" style=color:#ff7d73>
-                                Minecraft
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/Java" style=color:#879cff>
-                                Java
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
-    
-    <a-timeline>
-        <a-timeline-item timestamp="2021/9/25" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2021/9/25</div>
-                <a href="/2021/09/25/awa/">
-                    <h3>test</h3>
-                </a>
-                <div class="info">
-                    
+        
+        <span class="category">
+            <a href="/categories/Minecraft服务器">
+                <span class="icon">
+                    <a-icon type="book" theme="filled" />
+                </span>
+                Minecraft服务器
+            </a>
+        </span>
+        
 
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <a-icon type="tags" />
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/awa" style=color:#879cff>
-                                awa
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/测试" style=color:#ff7d73>
-                                测试
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
+        
+
+        <span class="tags">
+            <span class="icon">
+                <a-icon type="tags" theme="filled" />
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Minecraft" style=color:#1bccbc>
+                    Minecraft
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Java" style=color:#879cff>
+                    Java
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+
+    <div class="content" v-pre>
+        <p>还是打算换回纯生存了…</p>
+
+    </div>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
     
 </div>
-
                      
 <footer id="footer">
     <div class="footer-wrap">
@@ -313,6 +290,21 @@
             }
         }
     })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: 'hexo-theme-particle',      // The repository of store comments,
+        owner: 'korilin',
+        admin: ['korilin'],
+        language: 'en',
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: true  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
 </script>
 
 </body>
